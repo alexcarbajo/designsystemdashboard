@@ -1,6 +1,7 @@
 .o-Group {
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 }
 
 .o-Group__item {
@@ -41,12 +42,13 @@
 }
 
 .o-Group__headline + .c-Component {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .c-Component {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  margin-left: 0.5rem;
 }
 
 .c-Component__headline {
@@ -62,7 +64,7 @@
   .c-Icon {
     width: 0.5rem;
     height: 0.5rem;
-    margin-right: 0.25rem;
+    margin-right: 0.35rem;
 
     path {
       fill: $color-grey;
@@ -72,8 +74,8 @@
 
 .c-Component__icon {
   .c-Icon {
-    width: 0.875rem;
-    height: 0.875rem;
+    width: 0.75rem;
+    height: 0.75rem;
   }
 
   path {
@@ -98,10 +100,11 @@
 .c-Component__list {
   list-style: none;
   margin-left: 2rem;
+  margin-bottom: 0;
 
   .c-Icon {
-    width: 0.875rem;
-    height: 0.875rem;
+    width: 0.65rem;
+    height: 0.65rem;
     path {
       fill: $color-brand-secondary;
     }
