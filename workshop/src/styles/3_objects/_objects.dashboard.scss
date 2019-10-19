@@ -58,7 +58,7 @@
   transition: 0.2s ease background-color;
 
   &:hover {
-    background-color: rgba($color-brand-primary-highlight, 100);
+    background-color: rgba($color-brand-primary-highlight, 1);
   }
 
   &.isActive {
@@ -106,6 +106,16 @@
 .c-Search {
   position: relative;
   display: inline-flex;
+
+  &:hover {
+    .c-Search__icon {
+      .c-Icon {
+        path {
+          fill: $color-brand-primary;
+        }
+      }
+    }
+  }
 }
 
 .c-Search__icon {
@@ -115,11 +125,11 @@
   height: 100%;
   pointer-events: none;
   margin-left: 0.875rem;
+  transition: 0.5s ease all;
 
   .c-Icon {
-
     path {
-      fill: $color-brand-primary;
+      fill: $color-brand-primary-highlight;
     }
   }
 }
@@ -127,14 +137,15 @@
 .c-Search__input {
   padding: 0.5rem;
   border-radius: 30px;
-  border: 1px solid $color-grey-light;
+  border: 1px solid rgba($color-grey-light, 1);
   font-size: 15px;
   padding-left: 2.5rem;
   outline: none;
   color: $color-grey;
+  transition: 0.5s ease all;
 
-  &:focus {
-    border-color: $color-brand-primary-highlight;
+  &:hover, &:focus {
+    border-color: rgba($color-brand-primary-highlight, 1);
   }
 }
 
@@ -145,19 +156,33 @@
 .c-Select {
   position: relative;
   display: inline-flex;
+
+  &:hover {
+    .c-Select__icon {
+      path {
+        fill: rgba($color-brand-primary, 1); 
+      }
+    }
+    .c-Select__select {
+      color: rgba($color-brand-primary, 1);
+      background-color: rgba($color-brand-primary-highlight, 0.1);
+    }
+  }
 }
 
 .c-Select__icon {
   position: absolute;
   display: flex;
   align-items: center;
-  right: 0;
+  right: 0.45rem;
   pointer-events: none;
   height: 100%;
+  transition: 0.2s ease all;
 
   .c-Icon {
     width: 0.75rem;
     height: 0.75rem;
+    margin-bottom: 3px;
 
     path {
       fill: $color-grey;
@@ -166,14 +191,15 @@
 }
 
 .c-Select__select {
-  cursor: pointer;
   -webkit-appearance: none;
   border: none;
-  color: $color-grey;
-  font-size: 0.875rem;
+  color: rgba($color-grey, 1);
+  font-size: 0.75rem; 
   background-color: $color-white;
-  padding: 0.5rem 1.15rem 0.5rem 0.25rem;
+  padding: 0.5rem 1.65rem 0.5rem 0.55rem;
   text-transform: uppercase;
+  background-color: rgba($color-brand-primary-highlight, 0);
+  transition: 0.2s ease all;
 }
 
 .o-Group {
