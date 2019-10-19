@@ -44,38 +44,3 @@
   padding: 2rem;
   height: 100%;
 }
-
-.o-Group {
-  display: flex;
-  color: grey;
-}
-
-.o-Group__item + .o-Group__item {
-  padding-left: 2rem;
-  margin-left: 2rem;
-  border-left: 1px solid black;
-}
-
-.o-Group__item {
-  height: 100%;
-}
-
-.c-Component {
-  
-}
-
-.c-Component + .c-Component {
-  margin-top: 0.85rem;
-}
-
-.c-Component__list {
-  margin-left: 1rem;
-}
-
-.c-Component__list-item {
-  
-}
-
-.c-Component__list-item + .c-Component__list-item {
-  margin-top: 0.25rem;
-}

@@ -1,9 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import Codeui from '../assets/codeui'
-import ArrowDown from '../assets/arrowDown'
 import Menu from '../components/menu'
 import Search from '../components/search'
+import Select from '../components/select'
+
+import FolderIcon from '../assets/folder'
+import LayoutIcon from '../assets/layout'
+import BookmarkIcon from '../assets/bookmark'
+import AnchorDown from '../assets/anchorDown'
 
 export default () => 
     <div className="o-Dashboard">
@@ -23,42 +28,24 @@ export default () =>
             <div className="o-Dashboard__header">
                 <Search placeholder="Find component"></Search>
 
-                <div className="c-Select">
-                    <div className="c-Select__icon">
-                        <ArrowDown></ArrowDown>
-                    </div>
-                    
-                    <select className="c-Select__select">
-                        <option>English</option>
-                        <option>Arab</option>
-                    </select>
-                </div>
+                <Select>
+                    <option>English</option>
+                    <option>Arab</option>
+                </Select>
 
-                <div className="c-Select">
-                    <div className="c-Select__icon">
-                        <ArrowDown></ArrowDown>
-                    </div>
-                    
-                    <select className="c-Select__select">
-                        <option>CLX</option>
-                        <option>NCB</option>
-                        <option>BAJ</option>
-                        <option>SAIB</option>
-                    </select>
-                </div>
+                <Select>
+                    <option>CLX</option>
+                    <option>NCB</option>
+                    <option>BAJ</option>
+                    <option>SAIB</option>
+                </Select>
 
-                <div className="c-Select">
-                    <div className="c-Select__icon">
-                        <ArrowDown></ArrowDown>
-                    </div>
-                    
-                    <select className="c-Select__select">
-                        <option>Standard</option>
-                        <option>Gold</option>
-                        <option>Silver</option>
-                        <option>Platinum</option>
-                    </select>
-                </div>
+                <Select>
+                    <option>Standard</option>
+                    <option>Gold</option>
+                    <option>Silver</option>
+                    <option>Platinum</option>                    
+                </Select>
             </div>
 
             <div className="o-Dashboard__item">
@@ -66,43 +53,47 @@ export default () =>
                 
                 <div className="o-Group">
                     <div className="o-Group__item">
-                        <div className="c-Title">
-                            Shared
+                        <div className="o-Group__headline">
+                            <div className="o-Group__icon">
+                                <FolderIcon></FolderIcon>
+                            </div>
+                            <span className="o-Group__title">
+                                Shared
+                            </span>
                         </div>
+
                         <div className="c-Component">
-                            <div className="c-Component__title">
-                                Layout
+                            <div className="c-Component__headline">
+                                <div className="c-Component__dropdown">
+                                    <AnchorDown></AnchorDown>
+                                </div>
+                                <div className="c-Component__icon">
+                                    <LayoutIcon></LayoutIcon>
+                                </div>
+                                <span className="c-Component__title">
+                                    Layout
+                                </span>
                             </div>
 
                             <ul className="c-Component__list">
-                                <li className="c-Component__list-item">
-                                    Grid
+                                <li className="c-Component__item">
+                                    <span className="c-Component__icon">
+                                        <BookmarkIcon></BookmarkIcon>
+                                    </span>
+                                    <span className="c-Component__title">
+                                        Grid
+                                    </span>
                                 </li>
-                                <li className="c-Component__list-item">
-                                    Shell
+                                <li className="c-Component__item">
+                                    <span className="c-Component__icon">
+                                        <BookmarkIcon></BookmarkIcon>
+                                    </span>
+                                    <span className="c-Component__title">
+                                        Shell
+                                    </span>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                    
-                <div className="o-Group__item">
-                    <div className="c-Title">
-                    Bocadillo
-                    </div>
-                    <div className="c-Component">
-                        <div className="c-Component__title">
-                            Churrasco
-                        </div>
-
-                        <ul className="c-Component__list">
-                            <li className="c-Component__list-item">
-                                Grid
-                            </li>
-                            <li className="c-Component__list-item">
-                                Shell
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
