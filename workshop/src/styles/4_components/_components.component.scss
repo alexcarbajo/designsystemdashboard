@@ -57,7 +57,7 @@
 }
 
 .c-Component + .c-Component {
-  margin-top: 0.85rem;
+  margin-top: 0.5rem;
 }
 
 .c-Component__list {
@@ -98,8 +98,8 @@
   }
 }
 
-.c-Component__headline + .c-Component__list, .c-Component__item + .c-Component__item {
-  margin-top: 0.35rem;
+.c-Component__headline + .c-Component__list .c-Component__item:first-child, .c-Component__item + .c-Component__item {
+  padding-top: 0.35rem;
 }
 
 .c-Component__item {
