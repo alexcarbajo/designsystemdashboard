@@ -52,6 +52,7 @@
 .c-Component__headline {
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .c-Component__dropdown {
@@ -97,9 +98,7 @@
 .c-Component__list {
   list-style: none;
   margin-left: 1rem;
-}
 
-.c-Component__list {
   .c-Icon {
     width: 0.875rem;
     height: 0.875rem;
@@ -107,4 +106,8 @@
       fill: $color-brand-secondary;
     }
   }
+}
+
+.c-Component__item {
+  cursor: pointer;
 }
