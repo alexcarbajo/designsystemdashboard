@@ -4,3 +4,10 @@ html {
   color: $color-page-text;
   font-family: $font-family;
 }
+
+html,
+body,
+#___gatsby, #gatsby-focus-wrapper {
+  width: 100%;
+  height: 100%;
+}

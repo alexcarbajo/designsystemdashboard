@@ -1,60 +1,3 @@
-/*------------------------------------*\
-  #MAIN
-\*------------------------------------*/
-
-/**
- * CONTENTS
- *
- * SETTINGS
- * All..................Because our Settings layer doesn’t actually produce any
- *                      CSS, we can safely glob all of the files into one import
- *                      without risk of bloating our compiled stylesheet. This
- *                      also allows us to easily recycle all of our
- *                      project-level settings into other Sass file/projects.
- *                      Please see `settings/_all.scss` for a full table of
- *                      contents.
- * THEMES
- *
- *
- * TOOLS
- * All..................Because our Tools layer doesn’t actually produce any
- *                      CSS, we can safely glob all of the files into one import
- *                      without risk of bloating our compiled stylesheet. This
- *                      also allows us to easily recycle all of our
- *                      project-level tooling into other Sass file/projects.
- *                      Please see `tools/_all.scss` for a full table of
- *                      contents.
- *
- * GENERIC
- * Box-sizing...........Better default `box-sizing`.
- * Normalize.css........A level playing field.
- * Reset................A pared back reset to remove margins.
- * Shared...............Sensibly and tersely share global commonalities.
- * Font.................Included a call to the font in Google. // Don't use in production websites
- *
- * ELEMENTS
- * Page.................Page-level styles (HTML element).
- * Headings.............Heading styles.
- * Links................Hyperlink styles.
- * Lists................Default list styles.
- * Images...............Base image styles.
- * Quotes...............Styling for blockquotes, etc.
- *
- * OBJECTS
- * Hero.................A wrapper for the main page
- *
- * COMPONENTS
- * Button...............Buttons and variations
- * Link.................Custom link for the page
- * Logo.................All the variations with the logo of the brand
- *
- * UTILITIES
- * Nowrap...............Avoid specific content broken in different lines
- * Healthcheck..........Visual health-check tool.
- * Debug................Highlight potentially troublesome code.
- */
-
-
 @import "0_settings/all";
 
 @import "0_themes/all";
@@ -74,12 +17,8 @@
 @import "2_elements/elements.page";
 @import "2_elements/elements.quotes";
 
-@import "3_objects/objects.itemList";
 
-@import "4_components/components.button";
-@import "4_components/components.link";
-@import "4_components/components.logo";
-@import "4_components/components.media";
+@import "3_objects/objects.dashboard";
 
 @import "5_utilities/utilities.healthcheck";
 @import "5_utilities/utilities.debug";
