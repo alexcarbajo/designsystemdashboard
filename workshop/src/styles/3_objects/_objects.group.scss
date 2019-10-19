@@ -121,9 +121,16 @@
 }
 
 .c-Component__headline, .c-Component__item {
-  &:hover {
+  padding: 0.15rem;
+
+  .c-Component__title {
+    border-bottom: 1px solid $color-white;
+    transition: 0.25s ease all;
+  }
+
+  &:hover, &.isActive {
     .c-Component__title {
-      text-decoration: underline;
+      border-bottom-color: rgba($color-brand-primary-highlight, 0.5);
     }
   }
 }
