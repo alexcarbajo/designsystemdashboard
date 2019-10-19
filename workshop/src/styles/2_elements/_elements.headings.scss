@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: $global-font-size;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: $color-brand-primary-headline;
+}
+
+h2 {
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: $color-grey;
+}
+
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}

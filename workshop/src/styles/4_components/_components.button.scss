@@ -1,0 +1,31 @@
+.c-Button {
+  display: flex;
+  flex: 1 0 100%;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  justify-content: center;
+  color: $color-white;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.c-Button--primary {
+  background: linear-gradient(45deg, #a73cff 0%,#767cff 64%,#3bbffe 100%);
+  transition: $global-transition $global-transition--button;
+
+  &:hover, &:active {
+    transform: translate(0, -2px);
+    box-shadow: 0 4px 7px rgba(0,0,0,0.17);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .c-Button--primary {
+    padding: 1rem 3rem;
+  }
+}

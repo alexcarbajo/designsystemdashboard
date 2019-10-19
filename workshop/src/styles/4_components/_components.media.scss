@@ -1,0 +1,19 @@
+.c-Media {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 100%;
+} 
+
+.c-Media__headline {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.c-Media__image {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}

@@ -1,0 +1,19 @@
+// Project-level settings and setup.
+
+// Base typographical styles and baseline grid.
+$global-font-size:    1rem !default;
+$global-line-height:  round($global-font-size * 1.25) !default;
+
+// Standardise some UI treatments.
+$global-radius:                   3px !default;
+$global-transition:               0.125s !default;
+$global-transition--button:       0.125s !default;
+$global-transition--movement:     ease translate;
+
+// Private/framework-only reassignment. Do not alter anything below.
+$global-spacing-unit:       round($global-line-height);
+
+
+@if ($global-spacing-unit != $global-line-height) {
+  @error "The value of `$global-spacing-unit` must not be changed.";
+}
