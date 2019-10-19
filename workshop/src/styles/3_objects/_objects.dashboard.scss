@@ -5,7 +5,7 @@
 }
 
 .o-Dashboard__sidebar {
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 100%;
   background-color: rgba(88, 100, 246, 1);
@@ -35,6 +35,7 @@
 }
 
 .o-Dashboard__header {
+  display: none;
   padding: 1.5rem 2rem;
 }
 
@@ -43,4 +44,14 @@
   background-color: rgb(246,248,254);
   padding: 2rem;
   height: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .o-Dashboard__sidebar {
+    display: flex;
+  }
+
+  .o-Dashboard__header {
+    display: flex;
+  }
 }
