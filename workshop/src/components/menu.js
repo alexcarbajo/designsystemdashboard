@@ -8,13 +8,13 @@ import Envelope from '../assets/envelope'
 export default () => 
     <div className="c-Menu">
         <div className="c-Menu__main">
-            <Link To="index" className="c-Menu__item isActive">
+            <Link to="/" className="c-Menu__item isActive">
                 <Hamburger></Hamburger>
             </Link>
         </div>
 
         <div className="c-Menu__footer">
-            <a href="#" className="c-Menu__item">
+            <a href="https://git.innofis.local/code-front-end/code-ui/code-ui-components/" target="_blank" className="c-Menu__item">
                 <Copy></Copy>
             </a>
             <a href="https://www.crealogix.design/design-system" target="_blank" className="c-Menu__item">

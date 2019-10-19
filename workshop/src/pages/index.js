@@ -5,17 +5,14 @@ import Menu from '../components/menu'
 import Search from '../components/search'
 import Select from '../components/select'
 import Group from '../components/group'
-
-import FolderIcon from '../assets/folder'
-import LayoutIcon from '../assets/layout'
-import BookmarkIcon from '../assets/bookmark'
-import AnchorDown from '../assets/anchorDown'
+import Component from '../components/component'
+import ComponentItem from '../components/componentItem'
 
 export default () => 
     <div className="o-Dashboard">
         <div className="o-Dashboard__sidebar">
             <div className="o-Dashboard__logo">
-                <Link To="index">
+                <Link to="/">
                     <Codeui></Codeui>
                 </Link>
             </div>
@@ -50,244 +47,63 @@ export default () =>
             </div>
 
             <div className="o-Dashboard__item">
-                <Group></Group>
+                <Group title="Shared">
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
+                </Group>
 
-                <div className="o-Group">
-                    <div className="o-Group__item">
-                        <div className="o-Group__headline">
-                            <div className="o-Group__icon">
-                                <FolderIcon></FolderIcon>
-                            </div>
-                            <span className="o-Group__title">
-                                Shared
-                            </span>
-                        </div>
+                <Group title="Shared">
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
 
-                        <div className="c-Component">
-                            <div className="c-Component__headline">
-                                <div className="c-Component__dropdown">
-                                    <AnchorDown></AnchorDown>
-                                </div>
-                                <div className="c-Component__icon">
-                                    <LayoutIcon></LayoutIcon>
-                                </div>
-                                <span className="c-Component__title">
-                                    Layout
-                                </span>
-                            </div>
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
 
-                            <ul className="c-Component__list">
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Grid
-                                    </span>
-                                </li>
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Shell
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
+                </Group>
 
-                        <div className="c-Component">
-                            <div className="c-Component__headline">
-                                <div className="c-Component__dropdown">
-                                    <AnchorDown></AnchorDown>
-                                </div>
-                                <div className="c-Component__icon">
-                                    <LayoutIcon></LayoutIcon>
-                                </div>
-                                <span className="c-Component__title">
-                                    Layout
-                                </span>
-                            </div>
+                <Group title="Shared">
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
 
-                            <ul className="c-Component__list">
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Grid
-                                    </span>
-                                </li>
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Shell
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            
-                <div className="o-Group">
-                    <div className="o-Group__item">
-                        <div className="o-Group__headline">
-                            <div className="o-Group__icon">
-                                <FolderIcon></FolderIcon>
-                            </div>
-                            <span className="o-Group__title">
-                                Shared
-                            </span>
-                        </div>
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
 
-                        <div className="c-Component">
-                            <div className="c-Component__headline">
-                                <div className="c-Component__dropdown">
-                                    <AnchorDown></AnchorDown>
-                                </div>
-                                <div className="c-Component__icon">
-                                    <LayoutIcon></LayoutIcon>
-                                </div>
-                                <span className="c-Component__title">
-                                    Layout
-                                </span>
-                            </div>
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
+                </Group>
 
-                            <ul className="c-Component__list">
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Grid
-                                    </span>
-                                </li>
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Shell
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
+                <Group title="Shared">
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
 
-                        <div className="c-Component">
-                            <div className="c-Component__headline">
-                                <div className="c-Component__dropdown">
-                                    <AnchorDown></AnchorDown>
-                                </div>
-                                <div className="c-Component__icon">
-                                    <LayoutIcon></LayoutIcon>
-                                </div>
-                                <span className="c-Component__title">
-                                    Layout
-                                </span>
-                            </div>
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
 
-                            <ul className="c-Component__list">
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Grid
-                                    </span>
-                                </li>
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Shell
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="o-Group">
-                    <div className="o-Group__item">
-                        <div className="o-Group__headline">
-                            <div className="o-Group__icon">
-                                <FolderIcon></FolderIcon>
-                            </div>
-                            <span className="o-Group__title">
-                                Shared
-                            </span>
-                        </div>
-
-                        <div className="c-Component">
-                            <div className="c-Component__headline">
-                                <div className="c-Component__dropdown">
-                                    <AnchorDown></AnchorDown>
-                                </div>
-                                <div className="c-Component__icon">
-                                    <LayoutIcon></LayoutIcon>
-                                </div>
-                                <span className="c-Component__title">
-                                    Layout
-                                </span>
-                            </div>
-
-                            <ul className="c-Component__list">
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Grid
-                                    </span>
-                                </li>
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Shell
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="c-Component">
-                            <div className="c-Component__headline">
-                                <div className="c-Component__dropdown">
-                                    <AnchorDown></AnchorDown>
-                                </div>
-                                <div className="c-Component__icon">
-                                    <LayoutIcon></LayoutIcon>
-                                </div>
-                                <span className="c-Component__title">
-                                    Layout
-                                </span>
-                            </div>
-
-                            <ul className="c-Component__list">
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Grid
-                                    </span>
-                                </li>
-                                <li className="c-Component__item">
-                                    <span className="c-Component__icon">
-                                        <BookmarkIcon></BookmarkIcon>
-                                    </span>
-                                    <span className="c-Component__title">
-                                        Shell
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>    
+                    <Component title="Layout">
+                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Shell"></ComponentItem>
+                    </Component>
+                </Group>
             </div>
         </div>
     </div>
