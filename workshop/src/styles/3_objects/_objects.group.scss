@@ -1,7 +1,15 @@
 .o-Group {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  margin-top: 2rem;
+  height: 100%;
+  padding: 1rem;
+  min-width: 180px;
+}
+
+.o-Group + .o-Group {
+  margin-left: 2rem;
+  padding-left: 3rem;
+  border-left: 1px solid $color-grey-light;
 }
 
 .o-Group__item {
@@ -16,6 +24,7 @@
 .o-Group__icon {
   display: flex;
   align-items: center;
+  margin-bottom: 2px;
 
   .c-Icon {
     width: 0.75rem;
@@ -107,6 +116,14 @@
     height: 0.65rem;
     path {
       fill: $color-brand-secondary;
+    }
+  }
+}
+
+.c-Component__headline, .c-Component__item {
+  &:hover {
+    .c-Component__title {
+      text-decoration: underline;
     }
   }
 }
