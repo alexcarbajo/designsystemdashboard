@@ -1,7 +1,7 @@
 .c-Component {
   display: flex;
   flex-direction: column;
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
 }
 
 .c-Component__headline {
@@ -25,7 +25,7 @@
   .c-Icon {
     width: 0.5rem;
     height: 0.5rem;
-    margin-right: 0.35rem;
+    margin-right: 0.5rem;
     transform: rotate(-90deg);
     transition: 0.25s ease all;
 
@@ -99,7 +99,7 @@
 }
 
 .c-Component__headline + .c-Component__list .c-Component__item:first-child, .c-Component__item + .c-Component__item {
-  padding-top: 0.35rem;
+  padding-top: 0.5rem;
 }
 
 .c-Component__item {
