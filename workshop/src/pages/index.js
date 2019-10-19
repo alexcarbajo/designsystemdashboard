@@ -6,6 +6,8 @@ import Copy from '../assets/copy'
 import LinkIcon from '../assets/link'
 import Envelope from '../assets/envelope'
 import Search from '../assets/search'
+import ArrowDown from '../assets/arrowDown'
+import arrowDown from "../assets/arrowDown"
 
 export default () => 
     <div className="o-Dashboard">
@@ -47,20 +49,43 @@ export default () =>
                     </div>
                     <input type="text" className="c-Search__input" placeholder="Find component" />
                 </div>
-                <select className="c-Select">
-                    <option>English</option>
-                    <option>Arab</option>
-                </select>
 
-                <select className="c-Select">
-                    <option>Crealogix</option>
-                    <option>NCB</option>
-                    <option>Bank AlJazira</option>
-                    <option>SAIB</option>
-                </select>
-                <select className="c-Select">
-                    <option>Default</option>
-                </select>
+                <div className="c-Select">
+                    <div className="c-Select__icon">
+                        <ArrowDown></ArrowDown>
+                    </div>
+                    
+                    <select className="c-Select__select">
+                        <option>English</option>
+                        <option>Arab</option>
+                    </select>
+                </div>
+
+                <div className="c-Select">
+                    <div className="c-Select__icon">
+                        <ArrowDown></ArrowDown>
+                    </div>
+                    
+                    <select className="c-Select__select">
+                        <option>CLX</option>
+                        <option>NCB</option>
+                        <option>BAJ</option>
+                        <option>SAIB</option>
+                    </select>
+                </div>
+
+                <div className="c-Select">
+                    <div className="c-Select__icon">
+                        <ArrowDown></ArrowDown>
+                    </div>
+                    
+                    <select className="c-Select__select">
+                        <option>Standard</option>
+                        <option>Gold</option>
+                        <option>Silver</option>
+                        <option>Platinum</option>
+                    </select>
+                </div>
             </div>
 
             <div className="o-Dashboard__item">

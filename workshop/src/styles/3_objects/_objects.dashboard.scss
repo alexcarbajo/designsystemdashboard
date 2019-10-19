@@ -110,12 +110,13 @@
 
 .c-Search__icon {
   position: absolute;
-  margin-left: 0.875rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
   pointer-events: none;
+  margin-left: 0.875rem;
 
   .c-Icon {
-    top: 50%;
-    transform: translate(0, -50%);
 
     path {
       fill: $color-brand-primary;
@@ -130,10 +131,49 @@
   font-size: 15px;
   padding-left: 2.5rem;
   outline: none;
+  color: $color-grey;
 
   &:focus {
     border-color: $color-brand-primary-highlight;
   }
+}
+
+.c-Search + .c-Select, .c-Select + .c-Select {
+  margin-left: 2rem;
+}
+
+.c-Select {
+  position: relative;
+  display: inline-flex;
+}
+
+.c-Select__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  pointer-events: none;
+  height: 100%;
+
+  .c-Icon {
+    width: 0.75rem;
+    height: 0.75rem;
+
+    path {
+      fill: $color-grey;
+    }
+  }
+}
+
+.c-Select__select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: none;
+  color: $color-grey;
+  font-size: 0.875rem;
+  background-color: $color-white;
+  padding: 0.5rem 1.15rem 0.5rem 0.25rem;
+  text-transform: uppercase;
 }
 
 .o-Group {
