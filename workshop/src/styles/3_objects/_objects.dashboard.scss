@@ -1,84 +1,120 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
 
-html,
-body,
-#___gatsby, #gatsby-focus-wrapper {
-  width: 100% !important;
-  height: 100% !important;
-}
 
-.o-dashboard {
+
+.o-Dashboard {
   display: flex;
   flex: 1 0 100%;
   height: 100%;
 }
 
-.o-dashboard__sidebar {
+.o-Dashboard__sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background-color: rgba(88, 100, 246, 1);
   color: white;
+  max-width: 80px;
+}
+
+.o-Dashboard__logo {
+  display: flex;
+  width: 80px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.o-Dashboard__menu {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
-.o-dashboard__content {
+.c-Menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.c-Menu__footer, .c-Menu__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-Menu__item {
+  .c-Icon {
+    path, rect {
+      fill: $color-white;
+    }
+  }
+}
+
+.o-Dashboard__content {
   height: 100%;
   display: flex;
   flex-direction: column;
   flex: 1 0 100%;
 }
 
-.o-dashboard__header {
-  padding: 2rem 1rem;
+.o-Dashboard__header {
+  display: flex;
+  height: 100px;
 }
 
-.o-dashboard__item {
-  background: rgb(246,248,254);
+.o-Dashboard__item {
+  overflow: scroll;
+  background-color: rgb(246,248,254);
   padding: 2rem;
   height: 100%;
 }
 
-.c-search {
+.c-Search {
   padding: 0.5rem;
   border-radius: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid $color-grey-light;
   font-size: 15px;
   padding-left: 2rem;
+  outline: none;
+
+  &:focus {
+    border-color: $color-brand-primary-highlight;
+  }
 }
 
-input {
-    -webkit-appearance: none;
-}
-
-.o-group {
+.o-Group {
   display: flex;
   color: grey;
 }
 
-.o-group__item + .o-group__item {
+.o-Group__item + .o-Group__item {
   padding-left: 2rem;
   margin-left: 2rem;
   border-left: 1px solid black;
 }
 
-.o-group__item {
+.o-Group__item {
   height: 100%;
 }
 
-.c-component {
+.c-Component {
   
 }
 
-.c-component + .c-component {
+.c-Component + .c-Component {
   margin-top: 0.85rem;
 }
 
-.c-component__list {
+.c-Component__list {
   margin-left: 1rem;
 }
 
-.c-component__list-item {
+.c-Component__list-item {
   
 }
 
-.c-component__list-item + .c-component__list-item {
+.c-Component__list-item + .c-Component__list-item {
   margin-top: 0.25rem;
 }
