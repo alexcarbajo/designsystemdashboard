@@ -24,15 +24,15 @@ export default () =>
                     </div>
 
                     <div className="c-Menu__footer">
-                        <Link To="index" className="c-Menu__item">
+                        <a href="#" className="c-Menu__item">
                             <Copy></Copy>
-                        </Link>
-                        <Link To="index" className="c-Menu__item">
+                        </a>
+                        <a href="https://www.crealogix.design/design-system" target="_blank" className="c-Menu__item">
                             <LinkIcon></LinkIcon>
-                        </Link>
-                        <Link To="index" className="c-Menu__item">
+                        </a>
+                        <a href="mailto:design-es@crealogix.com" className="c-Menu__item">
                             <Envelope></Envelope>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
