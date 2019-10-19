@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import Codeui from '../assets/codeui'
+import Search from '../assets/search'
 import ArrowDown from '../assets/arrowDown'
 import Menu from '../components/menu'
-import Search from '../components/search'
 
 export default () => 
     <div className="o-Dashboard">
@@ -21,7 +21,12 @@ export default () =>
 
         <div className="o-Dashboard__content">
             <div className="o-Dashboard__header">
-                <Search placeholder="Find component"></Search>
+                <div className="c-Search">
+                    <div className="c-Search__icon">
+                        <Search></Search>
+                    </div>
+                    <input type="text" className="c-Search__input" placeholder="Find component" />
+                </div>
 
                 <div className="c-Select">
                     <div className="c-Select__icon">

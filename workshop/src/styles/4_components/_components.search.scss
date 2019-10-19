@@ -1,0 +1,49 @@
+.c-Search {
+  position: relative;
+  display: inline-flex;
+
+  &:hover {
+    .c-Search__icon {
+      .c-Icon {
+        path {
+          fill: $color-brand-primary;
+        }
+      }
+    }
+  }
+}
+
+.c-Search__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  pointer-events: none;
+  margin-left: 0.875rem;
+  transition: 0.5s ease all;
+
+  .c-Icon {
+    path {
+      fill: $color-brand-primary-highlight;
+    }
+  }
+}
+
+.c-Search__input {
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: 1px solid rgba($color-grey-light, 1);
+  font-size: 15px;
+  padding-left: 2.5rem;
+  outline: none;
+  color: $color-grey;
+  transition: 0.5s ease all;
+
+  &:hover, &:focus {
+    border-color: rgba($color-brand-primary-highlight, 1);
+  }
+}
+
+.c-Search + .c-Select, .c-Select + .c-Select {
+  margin-left: 2rem;
+}
