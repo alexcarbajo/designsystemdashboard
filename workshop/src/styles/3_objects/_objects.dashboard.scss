@@ -40,6 +40,8 @@
 }
 
 .o-Dashboard__item {
+  display: flex;
+  justify-content: space-between;
   overflow: scroll;
   background-color: rgb(246,248,254);
   padding: 2rem;
