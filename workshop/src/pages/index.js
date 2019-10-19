@@ -55,7 +55,7 @@ export default () =>
                 </Group>
 
                 <Group title="Shared">
-                    <Component title="Layout">
+                    <Component title="Layout" badge="Desktop">
                         <ComponentItem title="Grid"></ComponentItem>
                         <ComponentItem title="Shell"></ComponentItem>
                     </Component>
@@ -73,11 +73,11 @@ export default () =>
 
                 <Group title="Shared">
                     <Component title="Layout">
-                        <ComponentItem title="Grid"></ComponentItem>
+                        <ComponentItem title="Grid" badge="mobile"></ComponentItem>
                         <ComponentItem title="Shell"></ComponentItem>
                     </Component>
 
-                    <Component title="Layout">
+                    <Component title="Layout" badge="mobile">
                         <ComponentItem title="Grid"></ComponentItem>
                         <ComponentItem title="Shell"></ComponentItem>
                     </Component>

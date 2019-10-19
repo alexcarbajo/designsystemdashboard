@@ -25,6 +25,11 @@ class ComponentContainer extends Component {
                     <span className="c-Component__title">
                         {this.props.title}
                     </span>
+                    {this.props.badge ?
+                        <span className="c-Component__badge">
+                            {this.props.badge}
+                        </span>
+                    : '' }
                 </div>
 
                 <ul className="c-Component__list">
