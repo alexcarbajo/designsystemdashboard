@@ -5,6 +5,7 @@ import Hamburger from '../assets/hamburger'
 import Copy from '../assets/copy'
 import LinkIcon from '../assets/link'
 import Envelope from '../assets/envelope'
+import Search from '../assets/search'
 
 export default () => 
     <div className="o-Dashboard">
@@ -40,7 +41,12 @@ export default () =>
 
         <div className="o-Dashboard__content">
             <div className="o-Dashboard__header">
-                <input type="text" className="c-Search" placeholder="Find component" />
+                <div className="c-Search">
+                    <div className="c-Search__icon">
+                        <Search></Search>
+                    </div>
+                    <input type="text" className="c-Search__input" placeholder="Find component" />
+                </div>
                 <select className="c-Select">
                     <option>English</option>
                     <option>Arab</option>

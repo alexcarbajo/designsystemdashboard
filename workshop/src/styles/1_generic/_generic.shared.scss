@@ -12,3 +12,9 @@ ul, ol,
 dd {
   margin-left: $global-spacing-unit;
 }
+
+::placeholder {
+  color: $color-grey-light;
+  font-weight: 300;
+  font-size: 0.875rem;
+}

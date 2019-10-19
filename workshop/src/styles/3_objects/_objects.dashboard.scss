@@ -102,12 +102,33 @@
   height: 100%;
 }
 
+
 .c-Search {
+  position: relative;
+  display: inline-flex;
+}
+
+.c-Search__icon {
+  position: absolute;
+  margin-left: 0.875rem;
+  pointer-events: none;
+
+  .c-Icon {
+    top: 50%;
+    transform: translate(0, -50%);
+
+    path {
+      fill: $color-brand-primary;
+    }
+  }
+}
+
+.c-Search__input {
   padding: 0.5rem;
   border-radius: 30px;
   border: 1px solid $color-grey-light;
   font-size: 15px;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   outline: none;
 
   &:focus {
