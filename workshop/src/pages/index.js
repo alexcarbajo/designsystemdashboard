@@ -42,15 +42,15 @@ export default () =>
             <div className="o-Dashboard__header">
                 <input type="text" className="c-Search" placeholder="Find component" />
                 <select className="c-Select">
-                    <option>EN</option>
-                    <option>AR</option>
+                    <option>English</option>
+                    <option>Arab</option>
                 </select>
 
                 <select className="c-Select">
-                    <option>CLX</option>
-                    <option>SAIB</option>
-                    <option>BAJ</option>
+                    <option>Crealogix</option>
                     <option>NCB</option>
+                    <option>Bank AlJazira</option>
+                    <option>SAIB</option>
                 </select>
                 <select className="c-Select">
                     <option>Default</option>
