@@ -6,7 +6,9 @@
 }
 
 .o-Group__item {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100%;
 }
 
 .o-Group__headline {
