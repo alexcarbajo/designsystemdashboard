@@ -4,6 +4,7 @@ import Sidebar from '../components/sidebar'
 import Group from '../components/group'
 import Component from '../components/component'
 import ComponentItem from '../components/componentItem'
+import Search from '../components/search'
 
 export default () => 
     <div className="o-Dashboard">
@@ -74,7 +75,7 @@ export default () =>
             </div>
         </div>
 
-        <div className="c-Footer">
+        <div className="c-Footer isActive">
             <div className="c-Footer__item">
                 Find
             </div>
@@ -84,6 +85,10 @@ export default () =>
             
             <div className="c-Footer__item">
                 States
+            </div>
+
+            <div className="c-Footer__dropdown">
+                <Search placeholder="Search component" state="c-Search--alt"></Search>
             </div>
         </div>
     </div>
