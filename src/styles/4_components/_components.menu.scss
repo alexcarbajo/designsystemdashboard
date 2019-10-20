@@ -1,6 +1,6 @@
 .c-Menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex: 1 0 auto;
 }
@@ -70,7 +70,8 @@
 @media screen and (min-width: 768px) {
   .c-Menu {
     flex-direction: column;
-    height: 100%;
+    justify-content: space-between;
+    flex: 1 0 100%;
   }
 
   .c-Menu__main {
