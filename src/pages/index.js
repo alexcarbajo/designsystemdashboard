@@ -100,7 +100,7 @@ export default () =>
             </div>
         </div>
 
-        <div className="c-Footer isActive">
+        <div className="c-Footer">
             <div className="c-Footer__item">
                 Find
             </div>
