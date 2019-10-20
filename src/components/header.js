@@ -9,8 +9,8 @@ class Header extends Component {
             <Search placeholder="Find component"></Search>
 
             <Select>
-                <option>English</option>
-                <option>Arab</option>
+                <option>EN</option>
+                <option>AR</option>
             </Select>
 
             <Select>
