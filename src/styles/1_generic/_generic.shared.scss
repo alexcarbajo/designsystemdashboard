@@ -1,0 +1,20 @@
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+  margin-bottom: $global-spacing-unit;
+}
+
+ul, ol,
+dd {
+  margin-left: $global-spacing-unit;
+}
+
+::placeholder {
+  color: $color-grey-light;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
