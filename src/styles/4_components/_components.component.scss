@@ -92,6 +92,8 @@
   }
 
   &:hover, &.isActive {
+    text-decoration: none;
+    
     .c-Component__title {
       border-bottom-color: rgba($color-brand-primary-highlight, 0.75);
     }

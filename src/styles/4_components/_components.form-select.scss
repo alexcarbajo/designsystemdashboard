@@ -1,0 +1,52 @@
+.c-Form-select {
+  position: relative;
+  display: inline-flex;
+
+  &:hover {
+    .c-Form-select__icon {
+      path {
+        fill: rgba($color-brand-primary, 1); 
+      }
+    }
+    .c-Form-select__select {
+      color: rgba($color-brand-primary, 1);
+      background-color: rgba($color-brand-primary-highlight, 0.1);
+    }
+  }
+}
+
+.c-Form-select + .c-Form-select {
+  margin-left: 2rem;
+}
+
+.c-Form-select__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0.2rem;
+  pointer-events: none;
+  height: 100%;
+  transition: 0.2s ease all;
+
+  .c-Icon {
+    width: 0.65rem;
+    height: 0.65rem;
+
+    path {
+      fill: $color-grey;
+    }
+  }
+}
+
+.c-Form-select__select {
+  -webkit-appearance: none;
+  border: none;
+  border-bottom: 1px solid rgba($color-brand-primary, 1);
+  border-radius: 0;
+  color: rgba($color-grey, 1);
+  font-size: 0.875rem; 
+  background-color: $color-white;
+  padding: 0.5rem 1rem 0.5rem 0.2rem;
+  background-color: rgba($color-brand-primary-highlight, 0);
+  transition: 0.2s ease all;
+}

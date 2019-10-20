@@ -1,18 +1,23 @@
 .c-Menu {
   display: flex;
-  flex-direction: column;
-  height: 100%;
   justify-content: space-between;
-}
-
-.c-Menu__footer, .c-Menu__main {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .c-Menu__footer {
-  margin-bottom: 1rem;
+  display: none;
+  align-items: center;
+  margin: 0 1rem 0 0;
+}
+
+.c-Menu__main {
+  display: none;
+}
+
+.c-Menu__settings {
+  align-self: center;
+  padding-right: 0.5rem;
 }
 
 .c-Menu__item {
@@ -20,7 +25,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 1.25rem 0;
+  padding: 1rem;
   background-color: rgba($color-brand-primary-highlight, 0);
   transition: 0.2s ease background-color;
 
@@ -48,5 +53,43 @@
     path, rect {
       fill: $color-white;
     }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .c-Menu__settings {
+    margin-right: 0.5rem;
+    border-right: 1px solid $color-white;
+  }
+
+  .c-Menu__footer {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .c-Menu {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .c-Menu__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .c-Menu__item {
+    padding: 1.25rem 0;
+  }
+
+  .c-Menu__settings {
+    display: none;
+  }
+
+  .c-Menu__footer {
+    flex-direction: column;
+    margin: 0 0 1rem 0;
   }
 }

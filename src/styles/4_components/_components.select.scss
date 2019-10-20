@@ -15,6 +15,28 @@
   }
 }
 
+.c-Select--alt {
+  &:hover {
+    .c-Select__icon {
+      path {
+        fill: $color-white; 
+      }
+    }
+    .c-Select__select {
+      color: $color-white;
+      background-color: rgba($color-white, 0.1);
+    }
+  }
+}
+
+.c-Select + .c-Select {
+  margin-left: 1.5rem;
+}
+
+.c-Select--alt + .c-Select--alt {
+  margin-left: 0.5rem;
+}
+
 .c-Select__icon {
   position: absolute;
   display: flex;
@@ -33,6 +55,14 @@
       fill: $color-grey;
     }
   }
+
+  .c-Select--alt & {
+    .c-Icon {
+      path {
+        fill: $color-white;
+      }
+    }
+  }
 }
 
 .c-Select__select {
@@ -45,4 +75,8 @@
   text-transform: uppercase;
   background-color: rgba($color-brand-primary-highlight, 0);
   transition: 0.2s ease all;
+
+  .c-Select--alt & {
+    color: $color-white;
+  }
 }

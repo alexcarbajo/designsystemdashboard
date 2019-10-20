@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import BookmarkIcon from '../assets/bookmark'
 
 class ComponentItem extends Component {
   render() {
     return (
-        <li className="c-Component__item">
+        <Link to="/component" className="c-Component__item">
             <span className="c-Component__icon">
                 <BookmarkIcon></BookmarkIcon>
             </span>
@@ -16,7 +17,7 @@ class ComponentItem extends Component {
                     {this.props.badge}
                 </span>
             : '' }
-        </li>
+        </Link>
     );
   }
 }

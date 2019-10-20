@@ -4,10 +4,25 @@
 }
 
 .c-Icon--codeui, .c-Icon--crealogix {
-  width: 3rem;
-  height: 3rem;
-  
+  width: 2rem;
+  height: 2rem;
+
   path {
     fill: $color-white;
+  }
+
+  path + path {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .c-Icon--codeui, .c-Icon--crealogix {
+    width: 3rem;
+    height: 3rem;
+
+    path + path {
+      display: block;
+    }
   }
 }

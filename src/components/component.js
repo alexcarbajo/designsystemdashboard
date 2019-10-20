@@ -32,9 +32,9 @@ class ComponentContainer extends Component {
                     : '' }
                 </div>
 
-                <ul className="c-Component__list">
+                <div className="c-Component__list">
                     {this.props.children}
-                </ul>
+                </div>
             </div>
         );
     }

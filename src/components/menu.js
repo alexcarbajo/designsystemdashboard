@@ -4,6 +4,7 @@ import Hamburger from '../assets/hamburger'
 import Copy from '../assets/copy'
 import LinkIcon from '../assets/link'
 import Envelope from '../assets/envelope'
+import Select from '../components/select'
 
 export default () => 
     <div className="c-Menu">
@@ -11,6 +12,20 @@ export default () =>
             <Link to="/" className="c-Menu__item isActive">
                 <Hamburger></Hamburger>
             </Link>
+        </div>
+
+        <div className="c-Menu__settings">
+            <Select state="c-Select--alt">
+                <option>EN</option>
+            </Select>
+
+            <Select state="c-Select--alt">
+                <option>CLX</option>
+            </Select>
+
+            <Select state="c-Select--alt">
+                <option>Standard</option>
+            </Select>
         </div>
 
         <div className="c-Menu__footer">

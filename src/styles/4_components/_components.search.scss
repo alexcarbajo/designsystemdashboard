@@ -38,6 +38,7 @@
 }
 
 .c-Search__input {
+  -webkit-appearance: none;
   padding: 0.5rem;
   border-radius: 30px;
   border: 1px solid rgba($color-grey-light, 1);
@@ -52,6 +53,6 @@
   }
 }
 
-.c-Search + .c-Select, .c-Select + .c-Select {
+.c-Search + .c-Select {
   margin-left: 1.5rem;
 }
