@@ -1,8 +1,8 @@
 .o-Dashboard {
   display: flex;
+  flex-direction: column;
   flex: 1 0 100%;
   height: 100%;
-  flex-direction: column;
 }
 
 .o-Dashboard__sidebar {
@@ -33,6 +33,8 @@
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .o-Dashboard__header {
@@ -43,12 +45,10 @@
 .o-Dashboard__item {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background-color: rgb(246,248,254);
   padding: 1rem;
-  flex: 1 0 100%;
+  flex: 1 0 auto;
 }
 
 @media screen and (min-width: 750px) {
