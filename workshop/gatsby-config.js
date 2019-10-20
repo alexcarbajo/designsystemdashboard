@@ -11,6 +11,10 @@ module.exports = {
       options: {
       },
     },
+
+    {
+      resolve: `gatsby-plugin-react-helmet`,
+    },
   ],
 }
 

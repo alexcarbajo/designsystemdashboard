@@ -1,0 +1,28 @@
+.c-Footer {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  flex: 1 0 auto;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.c-Footer__item {
+  padding: 1rem 0;
+  font-weight: 500;
+  font-size: 0.75rem;
+  flex: 1 0 auto;
+  text-align: center;
+  border-bottom: 3px solid rgba($color-brand-primary, 0);
+  transition: 0.25s ease all;
+
+
+  &:hover, &.isActive {
+    border-bottom-color: rgba($color-brand-primary, 1);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .c-Footer {
+    display: none;
+  }
+}
